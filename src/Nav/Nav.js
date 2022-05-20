@@ -13,13 +13,13 @@ class Nav extends React.Component {
           <nav>
             <ul>
               <li>
-                <a href="#">Главная</a>
+                <a href="/">Главная</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Пункты обмена</a>
-              </li>
+              </li> */}
               <li>
-                <a href="#">Контакты</a>
+                <a href="/about">О нас</a>
               </li>
             </ul>
           </nav>

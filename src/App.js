@@ -1,9 +1,12 @@
 import "./App.css";
 import React from "react";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Rate from "./Rate/Rate";
+import About from "./About/About";
 
 class App extends React.Component {
   constructor(props) {
@@ -17,40 +20,12 @@ class App extends React.Component {
 
         <div className="container">
           <main>
-            <Rate />
-            <h3> Калькулятор обмена</h3>
-            <div className="block">
-              <div>Я хочу</div>
-              <div>
-                <label>
-                  <input type="radio" name="radio" defaultValue="0" />
-                  купить
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input type="radio" name="radio" defaultValue="1" />
-                  продать
-                </label>
-              </div>
-              <div>
-                <input type="number" defaultValue="150" />
-                <select name="" id="">
-                  <option value="USD">USD</option>
-                  <option value="RUB">RUB</option>
-                  <option value="EUR">EUR</option>
-                </select>
-              </div>
-              <div>
-                <h4>Результат</h4>
-                <ul className="calc-res">
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                </ul>
-              </div>
-            </div>
+            <Router>
+              <Routes>
+                <Route path="/" element={<Rate/>} />
+                <Route path="/about" element={<About />} />
+              </Routes>
+            </Router>
           </main>
         </div>
 
@@ -65,7 +40,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-				<Footer/>
+        <Footer />
       </div>
     );
   }
