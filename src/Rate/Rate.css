@@ -1,20 +1,28 @@
 .block {
   position: relative;
   padding: 20px 15px 20px 20px;
-  border: 1px solid #747474;
-  border-top: 1px solid #487922;
-  background: #ededed;
+  border-radius: 22px;
+  background: #5740bb;
+  color: #ffffff;
   margin: 20px;
+  transition: box-shadow 0.4s ease-in-out, transform 0.1s ease-in;
 }
 
-.block div {
-  margin-bottom: 20px;
+.block:hover {
+  box-shadow: rgba(60, 60, 103, 0.4) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.4) 0px 8px 16px -8px;
+  transform: translate(0, -0.55rem);
+}
+
+.calculator .block:hover {
+  transform: translate(0, -0.2rem);
 }
 
 .block .currency-in,
 .block .currency-out {
   font-size: 1.3rem;
   text-align: right;
+  cursor: default;
 }
 
 .flex-container {
@@ -51,7 +59,12 @@
 }
 
 .currency-name {
-  font-family: Oswald;
+  font-family: "Jura";
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.note {
+  font-size: 0.7rem;
+  padding-top: 10px;
 }

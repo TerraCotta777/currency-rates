@@ -1,18 +1,21 @@
 .header-nav {
-  background: #3b621c;
+  background: #311b8f;
+  border-top: 0.4px solid #ffffff;
 }
 
 .header-nav li {
   display: inline-block;
   padding: 15px 25px 15px;
+	transition: all 0.3s ease-in;
 }
 
 .header-nav li a,
 .header-nav li a:visited {
+	font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
   display: block;
 }
 .header-nav li:hover {
-  background: #487922;
+  background: #5740bb;
 }

@@ -1,0 +1,40 @@
+.calculator .block {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sell,
+.buy {
+  width: 100%;
+}
+
+label {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.calculator input,
+select,
+.count-currency {
+  background-color: #f0edff;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+.sell-box,
+.buy-box {
+  display: flex;
+}
+
+.count-currency {
+  width: 100%;
+}
+
+.calculator input[type="submit"] {
+  background-color: #5740bb;
+  color: #ffffff;
+  width: 60px;
+}

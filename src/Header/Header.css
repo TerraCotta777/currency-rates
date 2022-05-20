@@ -1,10 +1,5 @@
-header{background: #487922;}
-
-.top-bar {
-  padding:0px;
-  font-size: 12px;
-  border-bottom: .4px solid #3b621c;
-  min-height: 40px;
+header {
+  background: #5740bb;
 }
 
 .main-header {
